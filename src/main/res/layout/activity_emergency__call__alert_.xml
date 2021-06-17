@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context=".Emergency_Call_Alert_Activity">
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="353dp"
+        android:text="Add Number" />
+
+
+    <Button
+        android:id="@+id/moverHome"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_alignStart="@+id/PhoneNumber"
+        android:layout_alignTop="@+id/moverMFH"
+        android:layout_marginStart="-69dp"
+        android:layout_marginTop="4dp"
+        android:text="Home" />
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="99dp"
+        android:layout_marginBottom="89dp"
+        android:layout_toEndOf="@+id/moverHome"
+        android:text="Remove Number" />
+
+    <EditText
+        android:id="@+id/PhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="268dp"
+        android:background="@android:color/darker_gray"
+        android:ems="10"
+        android:hint="Add Phone number "
+        android:inputType="textPersonName"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/moverMFH"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-41dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@+id/btnAdd"
+        android:text="Medical Financial Help" />
+
+    <EditText
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/PhoneNumber"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-7dp"
+        android:layout_marginTop="312dp"
+        android:background="@android:color/darker_gray"
+        android:ems="10"
+        android:hint="Ring after No"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="@android:color/background_light" />
+
+
+    <EditText
+        android:id="@+id/delPhoneNumber"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btn_delete"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="422dp"
+        android:layout_marginEnd="108dp"
+        android:background="@android:color/darker_gray"
+        android:ems="10"
+        android:hint=" Number to be deleted"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="@android:color/background_light" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="327dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+        android:spinnerMode="dialog" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="129dp"
+        android:layout_height="109dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-28dp"
+        android:layout_marginTop="34dp"
+        android:layout_toEndOf="@+id/moverHome"
+        app:srcCompat="@mipmap/ic_launcher_round" />
+
+</RelativeLayout>
